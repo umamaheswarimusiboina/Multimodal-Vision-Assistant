@@ -1,0 +1,49 @@
+{
+  "expo": {
+    "name": "AI Vision Narrator",
+    "slug": "ai-vision-narrator",
+    "version": "1.0.0",
+    "newArchEnabled": false,
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#2196F3"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "This app uses the camera to describe scenes and read text for visually impaired users.",
+        "NSMicrophoneUsageDescription": "This app uses the microphone for voice input."
+      }
+    },
+    "android": {
+      "package": "com.visionapp.narrator",
+      "adaptiveIcon": {
+        "backgroundColor": "#2196F3"
+      },
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.DETECT_SCREEN_CAPTURE"
+      ]
+    },
+    "web": {
+      "bundler": "metro"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "85d35ea2-0198-498c-9afe-8458d7a3518e"
+      }
+    },
+    "plugins": [
+      [
+        "@react-native-voice/voice",
+        {
+          "microphonePermission": "Allow AI Vision Narrator to access your microphone for voice commands.",
+          "speechRecognitionPermission": "Allow AI Vision Narrator to securely recognize your speech."
+        }
+      ]
+    ]
+  }
+}
